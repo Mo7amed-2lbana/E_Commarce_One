@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(./images/light-patten.svg);
+  background-position: center;
+  background-size: cover;
+}
+nav{
+  z-index: 2;
+  
+}
+nav,
+footer {
+  background-color: #eee !important;
+}
+
+.loading-screen {
+  z-index: 99999999999999999999999999999;
+  background-color: #198754;
+  top: -50px!important;
+  
+}
+
+
+.parentElect:hover .more , 
+.parentMens:hover .more{
+  opacity:1;
+  transition: .5s;
+  animation: up_down 2s linear infinite;
+}
+.more {
+  bottom: -40px;
+  cursor: pointer;
+  opacity:  0;
+}
+
+.item .addCart{
+  transition: .5s;
+  transform: translateY(160%);
+}
+.item:hover .addCart{
+  transform: translateY(0);
+
+}
+
+.head::before{
+  content: "";
+  position: absolute;
+  background: #198754;
+  width: 50px;
+  height: 2px;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+.head::after{
+content: "";
+position: absolute;
+background: #198754;
+width:90px;
+height: 2px;
+left: 50%;
+bottom: -10px;
+transform: translateX(-50%);
+border-radius: 50%;
+}
+
+.activeLi{
+  border-bottom: 2px solid #198754!important;
+}
+.activeLi a{
+  color: #198754!important;
+}
+
+.item{
+  transition: .3s;
+  padding-bottom: 10px!important;
+  border: 1px solid transparent!important;
+}
+.item:hover{
+  border: 1px solid #198754 !important;
+}
+
+.notFound img{
+    height: 400px!important;
+}
+ .icon .total{
+  left: 50%;
+  top: -11px;
+  z-index: 99999;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes up_down {
+  0%,
+  10%,
+  20%,
+  30%,
+  50%,
+  70%,
+  80%,
+  90%,
+  100% {
+    bottom: -20px;
+  }
+  40%,
+  60% {
+    bottom: 0px;
+  }
+}
